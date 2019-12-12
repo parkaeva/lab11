@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int k;
+    float s, p;
+    cin>>p;
+    s=1000;
+    k=0;
+    setlocale(LC_ALL," ");
+    while(s<=1100)
+    {
+      s=s+s*(p/100);
+      k+=1;
+    }
+    cout<<"Итоговый размер вклада: "<<s<<endl<<"Кол-во месяцев: "<<k;
+    return 0;
+}
