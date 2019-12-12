@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n, f, k, a, f1;
+    cin>>n;
+    k=0;
+    f1=1;
+    a=0;
+    f=0;
+    while(f<=n)
+    {
+        k+=1;
+        f=f1+a;
+        a=f1;
+        f1=f;
+    }
+    cout<<k;
+    return 0;
+}
